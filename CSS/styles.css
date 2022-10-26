@@ -1,0 +1,297 @@
+/* paleta de colores
+#F5EFE6
+#E8DFCA
+#AEBDCA
+#7895B2
+*/
+
+/*** Global ***/
+
+:root {
+  --sectionBackground: #e8dfca;
+  --colorTitle: #5cabca;
+  --colorHover: #aebdca;
+  --colorInitial: #f5efe6;
+  --colorHoverImg: #aebdcacb;
+}
+
+a {
+  text-decoration: none;
+  color: var(--colorTitle);
+}
+
+a:hover {
+  color: var(--colorHover);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  padding: auto 5%;
+}
+
+h2 {
+  font-size: 3.4rem;
+  text-align: center;
+  color: var(--colorTitle);
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: var(--colorTitle);
+}
+
+p {
+  font-size: 1rem;
+  color: #8f8f8f;
+  line-height: 1.75;
+}
+
+hr {
+  color: var(--colorTitle);
+  margin: 3% 0;
+}
+
+.container-fluid {
+  padding: 5% 13%;
+}
+
+/*** Section Initial  ***/
+
+.imagen-profile {
+  background-image: url("../images/background_city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+}
+
+.title-initial {
+  color: var(--colorInitial);
+  padding: 10% 0% 1% 0%;
+  font-size: 3.8rem;
+  font-weight: 700;
+  display: inline-block;
+  /* border-bottom: solid 3px var(--colorInitial); */
+}
+
+.text-initial {
+  color: var(--colorInitial);
+  padding: 1% 0% 18% 0%;
+  font-size: 1.75rem;
+}
+
+/*** Section Profile ***/
+
+.profile-img {
+  width: 264px;
+  height: 264px;
+  border-radius: 15%;
+}
+
+.div-img {
+  text-align: center;
+}
+
+.profile-col {
+  padding-top: 2%;
+}
+
+/*** Section Carreer ***/
+
+#carreer {
+  background-color: var(--sectionBackground);
+}
+
+.subtitle-carreer {
+  color: black;
+  display: block;
+  font-weight: 700;
+  font-size: large;
+  margin-bottom: 1%;
+}
+
+.text-title-section {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1% 20%;
+}
+
+.subtitle-section {
+  margin-bottom: 1.5rem;
+}
+
+.text-education {
+  margin: 5%;
+}
+
+.location-carreer {
+  display: block;
+  margin-top: 1%;
+  color: var(--colorTitle);
+}
+
+.icon-carreer {
+  margin-right: 1%;
+}
+
+.seperator {
+  margin: 0 1%;
+}
+
+/* Section Ability */
+
+.title-ability {
+  text-align: center;
+}
+
+.quote {
+  padding-left: 2%;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-ability_1 {
+  padding-right: 2%;
+}
+
+.div-ability_2 {
+  padding-left: 2%;
+}
+
+.col-ability {
+  padding-left: 0;
+}
+
+#ability ul > li {
+  min-height: 30px;
+  padding: 1% 0px;
+}
+
+.project-referal {
+  padding: 2% 0;
+  text-align: center;
+}
+
+.btn-github {
+  background-color: var(--colorTitle);
+}
+
+.btn-github:hover {
+  background-color: var(--colorHover);
+}
+
+/*** bar progress ***/
+
+.progress {
+  margin-top: 1%;
+}
+
+progress::-webkit-progress-bar {
+  background-color: var(--sectionBackground);
+}
+progress::-webkit-progress-value {
+  background: var(--colorTitle);
+}
+progress::-moz-progress-bar {
+  /* for mozilla */
+  background: var(--colorTitle);
+}
+
+/*** Section Project ***/
+
+#project {
+  background-color: var(--sectionBackground);
+}
+
+#proyect {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_img {
+  width: 45%;
+  height: 50vh;
+  text-align: center;
+  /* overflow: hidden; */
+  position: relative;
+  margin: 1.5%;
+}
+
+.project_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project_img .hover {
+  width: 0;
+  height: 50vh;
+  background-color: var(--colorHoverImg);
+  position: absolute;
+  top: 0;
+  /* display: block;
+  justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+  transition: 0.4s all;
+  text-align: left;
+}
+
+.project_img:hover .hover {
+  width: 95%;
+}
+
+.hover .subtitle-project{
+  padding: 10% 0 0 10%;
+  color: var(--colorInitial);
+  font-weight: 700;
+}
+
+.hover .text-project{
+padding: 0 0 4% 10%;
+color: var(--colorInitial);
+}
+
+.hr-proyect{
+  border-top: solid 5px var(--colorInitial);
+  margin: 5% 10%;
+}
+
+.project_img a{
+  position: absolute;
+  right: 2.5%;
+  top: 0;
+  background-color: var(--colorTitle);
+  width: 12%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--colorInitial);
+  font-size: x-large;
+}
+
+
+/*** Section Contact ***/
+
+#contact {
+  text-align: center;
+}
+
+.ul-icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-contact {
+  font-size: xx-large;
+}
